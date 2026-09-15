@@ -1,0 +1,77 @@
+<!-- 
+    Bootstrap Annotations
+    1. The navbar-nav in the divs for the naviagtion links. Navbar-nav removes default link styling.
+    2. The img-fluid class in the images. This class shrinks the images to fit in and expand with their container.
+    3. The mt-auto class on the footer. This class puts as much margin on the top of the footer as is needed to push it down to the bottom of the screen/page.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../resources/css/styles.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body class="d-flex flex-column min-vh-100">
+        <nav class="navbar navbar-expand w-100 navbar-bg-color">
+            <div class="container-fluid p-0">
+                <div class="navbar-nav w-100">
+                    <a class="navbar-text flex-fill text-center border-end" href="./home.html">Home</a>
+                    <a class="navbar-text flex-fill text-center border-end" href="./hobbies.html">Hobbies</a>
+                    <a class="navbar-text flex-fill text-center border-end" href="./projects.html">Projects</a>
+                    <a class="navbar-text flex-fill text-center" href="./resume.html">Resume</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 1. The <main> tag is an element on the page-->
+        <!-- 3. The <section> tag is the child of the <main> tag-->
+        <main class="d-flex flex-column container pt-3">
+             <section class="row">
+                <div class="col">
+                    <h1>Hobbies</h1>
+                </div>
+            </section>
+
+            <div class="row">
+                <section class="col hobby-card">
+                    <h1>Game Development</h1>
+
+                    <!-- 2. The href in the img tag is an attribute-->
+                    <img class="img-fluid" src="../resources/img/controller.jpg" alt="An image of a video game controller"></img>
+
+                    <p>
+                        One of my hobbies is game devlopment. I mainly develop 2D games in Java and Javascript.
+                    </p>   
+                </section>
+
+                <section class="col hobby-card">
+                    <h1>Guitar</h1>
+                    <img class="img-fluid" src="../resources/img/guitar.jpg" alt="An image of an acoustic guitar"></img>
+
+                    <p>
+                        I also play guitar in my spare time. Sometimes I write songs to use in my games.
+                    </p>   
+                </section>
+
+                <section class="col hobby-card">
+                    <h1>Running</h1>
+                    <img class="img-fluid" src="../resources/img/track.jpg" alt="An image of a running track"></img>
+
+                    <p>
+                        Another hobby I have is running. I have been doing it since middle school. I like going on three mile runs.
+                    </p>   
+                </section>
+            </div>
+        </main>
+
+         <footer class="flex mt-auto mb-2 footer-bg-color">
+            <div class="ps-2 pt-4 pb-4">
+                <a href="http://www.linkedin.com/in/nathanael-koo-3115a4366">Linkedin</a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
